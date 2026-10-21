@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!--
+    PORTFOLIO DE BOUBOU DIANKA
+    ==========================
+    Une seule page, en anglais. Pas de bouton de langue : un visiteur francophone
+    utilise la traduction de son navigateur (Chrome, Safari, Edge : « Traduire en français »).
+    Ton nom et ton e-mail portent translate="no" pour que la traduction n'y touche pas.
+
+    index.html      la page du site
+    css/style.css   l'apparence (couleurs, polices, mise en page)
+    js/script.js    le menu sur mobile, le lien actif, le bouton « Copy », les apparitions au défilement
+    img/            le portrait, l'image de partage (og.jpg) et l'icône de l'onglet
+    docs/           le CV en PDF : il s'ouvre dans un nouvel onglet, on le lit puis on le télécharge si on veut
+                    (pour le mettre à jour, remplace le fichier en gardant le même nom)
+    fonts/          les polices Fraunces et Public Sans, hébergées avec le site
+
+    Chaque partie de la page commence par un commentaire « ===== Nom de la partie ===== » :
+    cherche « ===== » avec Cmd + F pour passer de l'une à l'autre.
+  -->
+  <title>Boubou Dianka · PhD candidate in applied economics</title>
+  <meta name="description" content="Boubou Dianka, PhD candidate in applied economics (Université de Pau et des Pays de l'Adour, TREE laboratory): beliefs, ambiguity, migration and the labour market.">
+  <meta name="author" content="Boubou Dianka">
+  <meta name="color-scheme" content="only light">
+  <meta name="theme-color" content="#F6F3EC">
+  <link rel="canonical" href="https://boubou-dianka.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Boubou Dianka · PhD candidate in applied economics">
+  <meta property="og:description" content="Beliefs, ambiguity and economic decisions: PhD thesis, master's thesis and research work.">
+  <meta property="og:url" content="https://boubou-dianka.github.io/">
+  <meta property="og:image" content="https://boubou-dianka.github.io/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Boubou Dianka",
+    "url": "https://boubou-dianka.github.io/",
+    "image": "https://boubou-dianka.github.io/img/portrait.webp",
+    "email": "mailto:bouboudiankha5@gmail.com",
+    "jobTitle": "PhD candidate in applied economics",
+    "affiliation": [
+      { "@type": "CollegeOrUniversity", "name": "Université de Pau et des Pays de l'Adour" },
+      { "@type": "ResearchOrganization", "name": "TREE laboratory (UMR CNRS 6031)" }
+    ],
+    "description": "PhD candidate in applied economics: how beliefs and ambiguity shape economic decisions.",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Université de Pau et des Pays de l'Adour" },
+      { "@type": "CollegeOrUniversity", "name": "Aix-Marseille Université" },
+      { "@type": "CollegeOrUniversity", "name": "Université Cheikh Anta Diop de Dakar" }
+    ],
+    "knowsAbout": ["Experimental economics", "Behavioural economics", "Economics of migration", "Spatial econometrics", "Time series", "Machine learning"],
+    "sameAs": ["https://github.com/boubou-dianka"]
+  }
+  </script>
+</head>
+<body>
+<a class="evitement" href="#contenu">Skip to content</a>
+
+<!-- ===== En-tête ===== -->
+<header class="entete">
+  <div class="enveloppe entete-in">
+    <a class="marque" href="#haut" aria-label="Boubou Dianka, back to top">
+      <span class="monogramme" aria-hidden="true">BD</span>
+      <span class="marque-nom" translate="no">Boubou Dianka</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#recherche">Research</a>
+      <a href="#projets">Projects</a>
+      <a href="#parcours">Background</a>
+      <a href="#competences">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="menu-mot">Menu</span></button>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- ===== Haut de page ===== -->
+<section class="hero" id="haut" aria-labelledby="titre-hero">
+  <div class="enveloppe hero-grille">
+    <div>
+      <p class="surtitre">Applied economics · Experimental economics</p>
+      <h1 id="titre-hero" translate="no">Boubou <em>Dianka</em></h1>
+      <p class="chapo">I study how beliefs and ambiguity shape economic decisions: whether to move abroad for work, whether to take a job offer or keep searching, whether to contribute to a shared resource. My tools are experimental economics, econometrics and simulation.</p>
+      <ul class="statut">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg><span>PhD candidate in applied economics, Université de Pau et des Pays de l'Adour</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M8 7h6"/></svg><span>Based at the TREE laboratory (UMR CNRS 6031)</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Pau, France</span></li>
+      </ul>
+      <div class="hero-actions">
+        <a class="btn btn-plein" href="#recherche">My research<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-contour" href="docs/CV-Boubou-Dianka.pdf" target="_blank" rel="noopener" type="application/pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>View my CV (French)</a>
+      </div>
+    </div>
+    <figure class="portrait" style="margin-block:0">
+      <div class="portrait-cadre">
+        <img src="img/portrait.webp" srcset="img/portrait-480.webp 480w, img/portrait.webp 720w" sizes="(min-width: 900px) 420px, 90vw" width="720" height="900" alt="Portrait of Boubou Dianka" fetchpriority="high">
+      </div>
+      <figcaption class="portrait-carte"><span>PhD in progress</span><strong>Beliefs, ambiguity, migration and the labour market</strong></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== En bref ===== -->
+<section class="faits" aria-label="At a glance">
+  <ul class="enveloppe faits-grille">
+    <li class="fait"><strong>3 essays</strong><span>in my PhD thesis, from theory to experiment</span></li>
+    <li class="fait"><strong>Master's thesis</strong><span>funded by the Université de Pau et des Pays de l'Adour</span></li>
+    <li class="fait"><strong>TREE · CNRS</strong><span>PhD candidate, after working there as a research assistant</span></li>
+    <li class="fait"><strong>Dakar → Pau</strong><span>UCAD, Aix-Marseille Université, then UPPA</span></li>
+  </ul>
+</section>
+
+<!-- ===== Recherche ===== -->
+<section class="section" id="recherche" aria-labelledby="titre-recherche">
+  <div class="enveloppe">
+    <div class="section-tete apparait">
+      <p class="surtitre">Research</p>
+      <h2 id="titre-recherche">Deciding when you don't really know your odds</h2>
+      <p class="section-intro">The common thread: many economic decisions are made without known probabilities. I try to measure what people believe, how they react to that uncertainty, and what it means for public policy.</p>
+    </div>
+
+    <article class="these apparait" aria-labelledby="titre-these">
+      <span class="these-label">PhD thesis · since 2026</span>
+      <h3 id="titre-these">Essays on the role of beliefs and ambiguity: migration and the labour market</h3>
+      <p class="these-texte">Moving abroad for work means deciding without knowing your real chances: the wage, the job, whether your degree will be recognised. Standard migration models assume known risks. My thesis starts from the opposite idea: the probabilities themselves are uncertain, and the way people react to this ambiguity can change who moves, where, and with what results.</p>
+      <ol class="essais">
+        <li class="essai">
+          <span class="essai-num">01</span>
+          <span class="essai-type">Theory</span>
+          <h4>Who moves when the odds are unknown?</h4>
+          <p>Roy and Borjas's model of migrant self-selection, revisited with the smooth ambiguity model of Klibanoff, Marinacci and Mukerji and a Nishimura–Ozaki reservation wage.</p>
+        </li>
+        <li class="essai">
+          <span class="essai-num">02</span>
+          <span class="essai-type">Experiment</span>
+          <h4>How do people judge their chances of finding a job?</h4>
+          <p>An experiment that measures what people believe about their chances of labour market integration, and their attitude towards the ambiguity around those chances.</p>
+        </li>
+        <li class="essai">
+          <span class="essai-num">03</span>
+          <span class="essai-type">Experiment</span>
+          <h4>Can information reduce ambiguity?</h4>
+          <p>People do not react to uncertainty in the same way depending on where it comes from. A randomised information intervention tests whether better information reduces ambiguity and changes choices.</p>
+        </li>
+      </ol>
+      <p class="these-refs"><strong>Starting points:</strong> Roy (1951), Sjaastad (1962), Todaro (1969), Harris and Todaro (1970), Borjas (1987), Manski (2004), Nishimura and Ozaki (2004), Klibanoff, Marinacci and Mukerji (2005), Abdellaoui et al. (2011).</p>
+    </article>
+
+    <article class="memoire apparait" aria-labelledby="titre-memoire">
+      <div>
+        <p class="memoire-label">Master's thesis · funded by UPPA</p>
+        <h3 id="titre-memoire">The tragedy of the commons: beliefs, ambiguity, social preferences and public policy</h3>
+        <div class="memoire-texte">
+          <p>Why do people who live and work by the beach in Saint-Louis, Senegal, chip in to keep it clean, or not? Some hold back because they count on the others, some because they expect nothing from them, and the usual protocols cannot tell the two apart.</p>
+          <p>I build a protocol that measures what each person believes about the others' contributions, and how much weight they give to these beliefs when they are uncertain (source method, Prelec weighting function). I first test it blind on 2,500 simulated residents: the estimation recovers their parameters without systematic bias.</p>
+        </div>
+        <ul class="etiquettes" aria-label="Methods">
+          <li>Behavioural economics</li><li>Game theory</li><li>Common goods</li><li>Belief elicitation</li><li>Python</li>
+        </ul>
+        <div class="memoire-liens">
+          <a class="lien-fleche" href="https://gist.github.com/1c2d74ad5b524ee700983717dae520c1" target="_blank" rel="noopener">Python code, open access<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="lien-fleche" href="mailto:bouboudiankha5@gmail.com?subject=Request%3A%20master%27s%20thesis%20(tragedy%20of%20the%20commons)">Request the thesis<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <ul class="chiffres" aria-label="The protocol in numbers">
+        <li><strong>2,500</strong><span>simulated residents used to test the protocol</span></li>
+        <li><strong>12</strong><span>certainty equivalents per resident, from bets on the others' contributions</span></li>
+        <li><strong>3</strong><span>contribution levels that the beliefs are about</span></li>
+      </ul>
+      <div class="memoire-figures">
+        <figure>
+          <a class="zoom" href="img/travaux/memoire-croyances-1250.webp" data-zoom>
+            <img src="img/travaux/memoire-croyances-700.webp" srcset="img/travaux/memoire-croyances-700.webp 700w, img/travaux/memoire-croyances-1250.webp 1250w" sizes="(min-width: 1180px) 400px, (min-width: 700px) 36vw, 92vw" width="700" height="596" loading="lazy" decoding="async" alt="Triangle of belief triplets for 2,500 virtual residents, coloured by the contribution they expect">
+            <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          </a>
+          <figcaption>The 2,500 virtual residents: each point is one set of beliefs about the others' effort, coloured by the contribution expected, from low (dark) to high (light).</figcaption>
+        </figure>
+        <figure>
+          <a class="zoom" href="img/travaux/memoire-recuperation-1600.webp" data-zoom>
+            <img src="img/travaux/memoire-recuperation-900.webp" srcset="img/travaux/memoire-recuperation-900.webp 900w, img/travaux/memoire-recuperation-1600.webp 1600w" sizes="(min-width: 1180px) 680px, (min-width: 700px) 58vw, 92vw" width="900" height="454" loading="lazy" decoding="async" alt="Eight scatter plots of estimated against true parameter values, all close to the 45-degree line">
+            <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          </a>
+          <figcaption>Blind test on simulated data: estimated against true values for 8 of the 14 parameters. The points sit on the 45° line (r from 0.89 to 0.998).</figcaption>
+        </figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Projets ===== -->
+<section class="section section-claire" id="projets" aria-labelledby="titre-projets">
+  <div class="enveloppe">
+    <div class="section-tete apparait">
+      <p class="surtitre">Projects</p>
+      <h2 id="titre-projets">Selected work</h2>
+      <p class="section-intro">Carried out during my research master's at UPPA. The charts come from the original reports. Full reports are available on request.</p>
+    </div>
+    <ul class="projets">
+      <li class="projet apparait">
+        <figure class="projet-figure">
+          <a class="zoom" href="img/travaux/bulles-tesla-825.webp" data-zoom>
+            <img src="img/travaux/bulles-tesla-825.webp" width="825" height="376" loading="lazy" decoding="async" alt="Chart of the BSADF statistic for Tesla from mid-2021 to early 2026, with the 95% critical value">
+            <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          </a>
+          <figcaption>Tesla, 2021–2026: the BSADF statistic crosses the 95% critical value twice, at the end of 2021 and in early 2023.</figcaption>
+        </figure>
+        <p class="projet-label">Time series · Machine learning</p>
+        <h3>Is artificial intelligence driving speculative bubbles?</h3>
+        <p class="projet-texte">Microsoft, Tesla and the Nasdaq index from 2021 to 2026. GSADF and BSADF tests detect explosive behaviour for Tesla, with two bubble episodes (2021-2022 and early 2023), while Microsoft and the Nasdaq show no lasting bubble. Empirical mode decomposition and wavelets show that volatility comes mostly from the short term. A random forest fed with Google Trends and Wikipedia data completes the analysis.</p>
+        <p class="resultat"><strong>2.965</strong> GSADF statistic for Tesla, against a threshold of 1.894</p>
+        <ul class="etiquettes" aria-label="Methods"><li>Python</li><li>GARCH</li><li>GSADF / BSADF</li><li>EMD and wavelets</li><li>Random forest</li></ul>
+        <div class="projet-pied">
+          <span class="projet-cadre">With the TREE laboratory</span>
+          <a class="lien-fleche" href="mailto:bouboudiankha5@gmail.com?subject=Report%20request%3A%20AI%20and%20speculative%20bubbles">Request the report<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </li>
+      <li class="projet apparait">
+        <figure class="projet-figure">
+          <a class="zoom" href="img/travaux/dpe-avant-apres-2000.webp" data-zoom>
+            <img src="img/travaux/dpe-avant-apres-1000.webp" srcset="img/travaux/dpe-avant-apres-1000.webp 1000w, img/travaux/dpe-avant-apres-2000.webp 2000w" sizes="(min-width: 1180px) 540px, (min-width: 880px) 45vw, 92vw" width="1000" height="443" loading="lazy" decoding="async" alt="Two maps of France by département showing the share of A–B rated dwellings before and after the 2021 reform">
+            <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          </a>
+          <figcaption>Share of A–B rated dwellings by département, before (left) and after (right) the reform. Each map has its own colour scale.</figcaption>
+        </figure>
+        <p class="projet-label">Spatial econometrics</p>
+        <h3>France's 2021 energy rating reform: an effect that spills across départements</h3>
+        <p class="projet-texte">Housing energy performance is not spread at random across French départements. Moran's I and Lagrange multiplier tests reveal spatial dependence that ordinary least squares miss. A spatial error model built on a contiguity matrix shows that shocks hitting one département partly spill over to its neighbours.</p>
+        <p class="resultat"><strong>λ = 0.424</strong> spatial error coefficient, significant at 1%</p>
+        <ul class="etiquettes" aria-label="Methods"><li>R</li><li>Moran's I</li><li>LM tests</li><li>Spatial error model</li></ul>
+        <div class="projet-pied">
+          <span class="projet-cadre">Research master's, 2025-2026</span>
+          <a class="lien-fleche" href="mailto:bouboudiankha5@gmail.com?subject=Report%20request%3A%20DPE%20reform">Request the report<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </li>
+      <li class="projet apparait">
+        <figure class="projet-figure">
+          <a class="zoom" href="img/travaux/teletravail-resultats-1539.webp" data-zoom>
+            <img src="img/travaux/teletravail-resultats-900.webp" srcset="img/travaux/teletravail-resultats-900.webp 900w, img/travaux/teletravail-resultats-1539.webp 1539w" sizes="(min-width: 1180px) 540px, (min-width: 880px) 45vw, 92vw" width="900" height="321" loading="lazy" decoding="async" alt="Diagram of the effects of remote work on residents, jobs, mobility and inequality">
+            <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          </a>
+          <figcaption>Our summary of the model's four main effects: skilled workers leave dense centres, local jobs follow them, commutes get longer but less frequent, and regional gaps narrow.</figcaption>
+        </figure>
+        <p class="projet-label">Economic geography</p>
+        <h3>Remote work: dispersion or agglomeration?</h3>
+        <p class="projet-texte">With Taoufiq Bouyarmane. We analyse the calibrated spatial model of Delventhal and Parkhomenko (2020) and its counterfactual simulations. Remote work durably reshapes where households live and where jobs are, without spelling the end of cities, with consequences for transport, local taxation and housing.</p>
+        <p class="resultat"><strong>+47%</strong> home–work distance, while total commuting time falls by 25%</p>
+        <ul class="etiquettes" aria-label="Methods"><li>Quantitative spatial model</li><li>Counterfactual simulations</li><li>New economic geography</li></ul>
+        <div class="projet-pied">
+          <span class="projet-cadre">Research master's, 2025-2026</span>
+          <a class="lien-fleche" href="mailto:bouboudiankha5@gmail.com?subject=Report%20request%3A%20remote%20work%20and%20spatial%20equilibrium">Request the report<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </li>
+      <li class="projet apparait">
+        <figure class="projet-figure">
+          <a class="zoom" href="img/travaux/cedeao-flux-1600.webp" data-zoom>
+            <img src="img/travaux/cedeao-flux-900.webp" srcset="img/travaux/cedeao-flux-900.webp 900w, img/travaux/cedeao-flux-1600.webp 1600w" sizes="(min-width: 1180px) 540px, (min-width: 880px) 45vw, 92vw" width="900" height="626" loading="lazy" decoding="async" alt="Line chart of average bilateral trade flows since 1995 for ECOWAS and WAEMU">
+            <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+          </a>
+          <figcaption>Average bilateral trade flows in ECOWAS and WAEMU (CEDEAO and UEMOA in French): ECOWAS flows peak, then drop sharply.</figcaption>
+        </figure>
+        <p class="projet-label">International trade · Gravity model</p>
+        <h3>Does a shared currency boost trade in West Africa?</h3>
+        <p class="projet-texte">A bilateral panel of ECOWAS countries from 1995 to 2025, built from UN Comtrade, World Bank and CEPII data and estimated by PPML with exporter, importer and year fixed effects. Economic size and distance play the roles the gravity model predicts, and infrastructure and political stability matter too. Belonging to the WAEMU monetary union does not raise trade on its own, which the report links to non-tariff barriers and similar, commodity-based exports.</p>
+        <p class="resultat"><strong>−0.073</strong> coefficient on joint WAEMU membership, significant at 1%</p>
+        <ul class="etiquettes" aria-label="Methods"><li>PPML</li><li>Gravity model</li><li>Fixed effects</li><li>Panel data</li></ul>
+        <div class="projet-pied">
+          <span class="projet-cadre">Research master's, 2025-2026</span>
+          <a class="lien-fleche" href="mailto:bouboudiankha5@gmail.com?subject=Report%20request%3A%20ECOWAS%20trade%20(gravity%20model)">Request the report<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </li>
+      <li class="projet projet-large projet-galerie apparait">
+        <div class="projet-corps">
+          <p class="projet-label">Survey · Data analysis</p>
+          <h3>Do banks meet the needs of students in Pau?</h3>
+          <p class="projet-texte">A questionnaire I designed and analysed with Sphinx IQ3 and R, answered by 52 students. Most are well banked: cards and mobile apps are part of daily life and about half save regularly. Gaps remain, though: paperwork is the main hurdle to opening an account, half would like a student loan, and many want practical help with managing their money.</p>
+          <p class="resultat"><strong>65%</strong> expect help with managing money from local bodies such as the Crous</p>
+          <ul class="etiquettes" aria-label="Methods"><li>Questionnaire design</li><li>Sphinx IQ3</li><li>R</li><li>Chi-square tests</li><li>Correspondence analysis</li></ul>
+          <div class="projet-pied">
+            <span class="projet-cadre">Master's in applied economics</span>
+            <a class="lien-fleche" href="mailto:bouboudiankha5@gmail.com?subject=Report%20request%3A%20financial%20inclusion%20of%20students">Request the report<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+        <div class="galerie">
+          <figure>
+            <a class="zoom" href="img/travaux/inclusion-usages-1077.webp" data-zoom>
+              <img src="img/travaux/inclusion-usages-640.webp" srcset="img/travaux/inclusion-usages-640.webp 640w, img/travaux/inclusion-usages-1077.webp 1077w" sizes="(min-width: 1180px) 300px, (min-width: 560px) 44vw, 92vw" width="640" height="454" loading="lazy" decoding="async" alt="Survey dashboard on bank account use, payment methods and savings among students in Pau">
+              <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </a>
+            <figcaption>How students bank: two thirds have had an account for over a year, cards and apps are used most, and 52% save regularly, mainly on a Livret A.</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="img/travaux/inclusion-obstacles-1084.webp" data-zoom>
+              <img src="img/travaux/inclusion-obstacles-640.webp" srcset="img/travaux/inclusion-obstacles-640.webp 640w, img/travaux/inclusion-obstacles-1084.webp 1084w" sizes="(min-width: 1180px) 300px, (min-width: 560px) 44vw, 92vw" width="640" height="482" loading="lazy" decoding="async" alt="Survey dashboard on difficulties opening a bank account and on financial literacy">
+              <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </a>
+            <figcaption>Obstacles: 13% had trouble opening an account, mostly because of paperwork (86% of them), and a third plan a budget very often.</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="img/travaux/inclusion-attentes-1089.webp" data-zoom>
+              <img src="img/travaux/inclusion-attentes-640.webp" srcset="img/travaux/inclusion-attentes-640.webp 640w, img/travaux/inclusion-attentes-1089.webp 1089w" sizes="(min-width: 1180px) 300px, (min-width: 560px) 44vw, 92vw" width="640" height="404" loading="lazy" decoding="async" alt="Survey dashboard on missing banking services and interest in personal finance workshops">
+              <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </a>
+            <figcaption>Expectations: a student loan is the service most missed (50%), and 58% would join personal finance workshops run by aid organisations.</figcaption>
+          </figure>
+          <figure>
+            <a class="zoom" href="img/travaux/inclusion-recommandations-1077.webp" data-zoom>
+              <img src="img/travaux/inclusion-recommandations-640.webp" srcset="img/travaux/inclusion-recommandations-640.webp 640w, img/travaux/inclusion-recommandations-1077.webp 1077w" sizes="(min-width: 1180px) 300px, (min-width: 560px) 44vw, 92vw" width="640" height="468" loading="lazy" decoding="async" alt="Survey dashboard on what banks and local institutions could do for students">
+              <span class="zoom-indice" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></span>
+            </a>
+            <figcaption>What students ask for: simpler procedures, clearer information and lower fees from banks, and help with managing money (65%) from local bodies such as the Crous.</figcaption>
+          </figure>
+        </div>
+      </li>
+      <li class="projet projet-large apparait">
+        <p class="projet-label">Panel data econometrics</p>
+        <h3>Road transport emissions in France</h3>
+        <p class="projet-texte">Thesis defended in July 2025. Fixed and random effects models to analyse road emissions by vehicle type. The results are in line with the literature and highlight the role of public policy in how emissions evolve.</p>
+        <ul class="etiquettes" aria-label="Methods"><li>Panel data</li><li>Fixed effects</li><li>Random effects</li></ul>
+        <div class="projet-pied">
+          <span class="projet-cadre">UPPA, 2025</span>
+          <a class="lien-fleche" href="mailto:bouboudiankha5@gmail.com?subject=Report%20request%3A%20road%20transport%20emissions">Request the report<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </li>
+    </ul>
+    <div class="autres apparait">
+      <h3>Other work</h3>
+      <ul>
+        <li><strong>Firm investment</strong>: panel VAR on 120 firms between 2009 and 2022, with Stata and Gretl.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Parcours ===== -->
+<section class="section" id="parcours" aria-labelledby="titre-parcours">
+  <div class="enveloppe">
+    <div class="section-tete apparait">
+      <p class="surtitre">Background</p>
+      <h2 id="titre-parcours">From Dakar to Pau</h2>
+    </div>
+    <div class="parcours-grille">
+      <div class="apparait">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>Education</h3>
+        <ol class="chrono">
+          <li>
+            <span class="annee">Since 2026</span>
+            <h4>PhD in applied economics</h4>
+            <span class="lieu">Université de Pau et des Pays de l'Adour, TREE laboratory</span>
+            <p>Thesis: “Essays on the role of beliefs and ambiguity: migration and the labour market”.</p>
+          </li>
+          <li>
+            <span class="annee">2025 – 2026</span>
+            <h4>Research master's (Master 2) in applied economics, EIED track</h4>
+            <span class="lieu">Université de Pau et des Pays de l'Adour</span>
+            <p>Spatial and time series econometrics, machine learning, behavioural economics, development economics, economic geography.</p>
+          </li>
+          <li>
+            <span class="annee">2023 – 2024</span>
+            <h4>Master's in economic and social sciences education (MEEF)</h4>
+            <span class="lieu">Aix-Marseille Université</span>
+            <p>Economics, sociology and political science, with teacher training.</p>
+          </li>
+          <li>
+            <span class="annee">2021 – 2022</span>
+            <h4>Master 2 in quantitative and financial economics</h4>
+            <span class="lieu">Université Cheikh Anta Diop, Dakar</span>
+          </li>
+          <li>
+            <span class="annee">2020 – 2021</span>
+            <h4>Bachelor's in economic analysis and policy</h4>
+            <span class="lieu">Université Cheikh Anta Diop, Dakar</span>
+          </li>
+        </ol>
+      </div>
+      <div class="apparait">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>Experience</h3>
+        <ol class="chrono">
+          <li>
+            <span class="annee">2025 – 2026</span>
+            <h4>Research assistant</h4>
+            <span class="lieu">TREE laboratory (UMR CNRS 6031), Pau</span>
+            <p>Speculative bubbles linked to artificial intelligence: GSADF and BSADF tests, EMD and wavelet decompositions, forecasting models.</p>
+          </li>
+          <li>
+            <span class="annee">2025</span>
+            <h4>Research intern</h4>
+            <span class="lieu">Cerema Sud-Ouest, Pau</span>
+            <p>Urban heat islands: a database of more than 50,000 spatial observations, eight thematic maps (vegetation, soil permeability) and two technical notes.</p>
+          </li>
+          <li>
+            <span class="annee">2024</span>
+            <h4>Research intern</h4>
+            <span class="lieu">ITEM laboratory, Université de Pau et des Pays de l'Adour</span>
+            <p>Access to housing for young workers: 15,000 observations from INSEE and FILOCOM data, and 25 interviews with social landlords and institutional actors.</p>
+          </li>
+          <li>
+            <span class="annee">2023 – 2024</span>
+            <h4>Trainee teacher in economic and social sciences</h4>
+            <span class="lieu">INSPE Aix-en-Provence, Lycée Vauvenargues</span>
+            <p>High school economics and social sciences: microeconomics, tax incidence, sociology.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <p class="engagements apparait"><strong>Involvement:</strong> class representative for the applied economics master's at UPPA (22 students).</p>
+  </div>
+</section>
+
+<!-- ===== Compétences ===== -->
+<section class="section section-claire" id="competences" aria-labelledby="titre-competences">
+  <div class="enveloppe">
+    <div class="section-tete apparait">
+      <p class="surtitre">Skills</p>
+      <h2 id="titre-competences">Methods and tools</h2>
+    </div>
+    <ul class="competences">
+      <li class="bloc apparait">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V4M4 20h16"/><path d="m7 15 4-4 3 3 5-6"/></svg>Econometrics</h3>
+        <ul>
+          <li>Panel data</li>
+          <li>Time series: VAR, GARCH, GSADF / BSADF</li>
+          <li>Spatial econometrics: Moran's I, SAR, SEM</li>
+          <li>Gravity model estimated by PPML</li>
+          <li>Evaluation: difference-in-differences, matching</li>
+        </ul>
+      </li>
+      <li class="bloc apparait">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/><path d="M7.5 15h9"/></svg>Experimental economics</h3>
+        <ul>
+          <li>Belief elicitation</li>
+          <li>Ambiguity attitudes: source method, Prelec</li>
+          <li>Social preferences</li>
+          <li>Game theory and common goods</li>
+        </ul>
+      </li>
+      <li class="bloc apparait">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M8.2 6h7.6M7 8l4 8M17 8l-4 8"/></svg>Data and machine learning</h3>
+        <ul>
+          <li>Random forests, neural networks</li>
+          <li>Empirical mode decomposition and wavelets</li>
+          <li>Simulation and calibration</li>
+          <li>Mapping spatial data</li>
+        </ul>
+      </li>
+      <li class="bloc apparait">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg>Software</h3>
+        <ul>
+          <li><strong>Every day:</strong> Python, R, Stata, LaTeX</li>
+          <li><strong>Also:</strong> Matlab, Mathematica, EViews, Gretl</li>
+          <li><strong>Data:</strong> SQL, Power BI, Excel, Sphinx IQ3</li>
+        </ul>
+      </li>
+      <li class="bloc apparait">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.6 5.6 3.6 9s-1.2 6.4-3.6 9M12 3c-2.4 2.6-3.6 5.6-3.6 9s1.2 6.4 3.6 9"/></svg>Languages</h3>
+        <ul>
+          <li><strong>French:</strong> fluent</li>
+          <li><strong>English:</strong> B2</li>
+        </ul>
+      </li>
+      <li class="bloc apparait">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="m9 13.5-2 7.5 5-3 5 3-2-7.5"/></svg>Certificates</h3>
+        <ul>
+          <li><strong>Deep Learning</strong>, Akademy Performance Digital, 2025</li>
+          <li><strong>English B2-C1</strong>, Cursa, 2025</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="section" id="contact" aria-labelledby="titre-contact">
+  <div class="enveloppe">
+    <div class="contact apparait">
+      <p class="surtitre">Contact</p>
+      <h2 id="titre-contact">Get in touch</h2>
+      <p class="contact-texte">For a collaboration, a question about my work or a report request, email is the easiest way.</p>
+      <div class="email-ligne">
+        <a class="email-grand" href="mailto:bouboudiankha5@gmail.com" translate="no" data-copiable>bouboudiankha5@gmail.com</a>
+        <button class="copier" type="button" data-copier="bouboudiankha5@gmail.com" data-copie="Copied"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button>
+      </div>
+      <div class="contact-actions">
+        <a class="btn btn-plein" href="docs/CV-Boubou-Dianka.pdf" target="_blank" rel="noopener" type="application/pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>View my CV (French)</a>
+        <a class="btn btn-contour" href="https://github.com/boubou-dianka" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg>My code on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Pied de page ===== -->
+<footer class="pied">
+  <div class="enveloppe pied-in">
+    <p>© <span data-annee>2026</span> Boubou Dianka · Pau, France</p>
+    <p><a href="#haut">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
